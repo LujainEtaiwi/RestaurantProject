@@ -1,0 +1,129 @@
+﻿@model Restaurant.ViewModels.SystemSettingModels
+
+@{
+    ViewData["Title"] = "SystemSettingEdit";
+}
+
+<div class="pagetitle">
+    <h1>Edit System Setting</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Home</a></li>
+            <li class="breadcrumb-item"><a asp-action="SystemSettingIndex" asp-controller="SystemSetting">Index</a></li>
+            <li class="breadcrumb-item active">System Setting Edit</li>
+        </ol>
+    </nav>
+</div>
+
+
+<hr />
+
+
+<section class="section">
+    <div class="row justify-content-center">
+        <div class="card col-md-12">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <form asp-action="SystemSettingEdit" enctype="multipart/form-data" class="needs-validation" novalidate >
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input asp-for="SystemSettingId" class="form-control" type="hidden" />
+                    <input asp-for="CreateUser" class="form-control" type="hidden" />
+                    <input asp-for="CreateDate" class="form-control" type="hidden" />
+                    <input asp-for="IsActive" class="form-control" type="hidden" />
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <div class="row mb-3">
+                                <label asp-for="SystemSettingWelcomeNoteTitle" class="col-sm-4 col-form-label"></label>
+                                <div class="col-sm-8">
+                                    <input asp-for="SystemSettingWelcomeNoteTitle" class="form-control" required />
+                                    <span asp-validation-for="SystemSettingWelcomeNoteTitle" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row mb-3">
+                                <label asp-for="SystemSettingWelcomeNoteBreef" class="col-sm-4 col-form-label"></label>
+                                <div class="col-sm-8">
+                                    <input asp-for="SystemSettingWelcomeNoteBreef" class="form-control" required />
+                                    <span asp-validation-for="SystemSettingWelcomeNoteBreef" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row mb-3">
+                                <label asp-for="SystemSettingWelcomeNoteDesc" class="col-sm-4 col-form-label"></label>
+                                <div class="col-sm-8">
+                                    <input asp-for="SystemSettingWelcomeNoteDesc" class="form-control" required />
+                                    <span asp-validation-for="SystemSettingWelcomeNoteDesc" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row mb-3">
+                                <label asp-for="SystemSettingWelcomeNoteUrl" class="col-sm-4 col-form-label"></label>
+                                <div class="col-sm-8">
+                                    <input asp-for="SystemSettingWelcomeNoteUrl" class="form-control" required />
+                                    <span asp-validation-for="SystemSettingWelcomeNoteUrl" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row mb-3">
+                                <label asp-for="SystemSettingMapLocation" class="col-sm-4 col-form-label"></label>
+                                <div class="col-sm-8">
+                                    <input asp-for="SystemSettingMapLocation" class="form-control" required />
+                                    <span asp-validation-for="SystemSettingMapLocation" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row mb-3">
+                                <label asp-for="SystemSettingCopyright" class="col-sm-4 col-form-label"></label>
+                                <div class="col-sm-8">
+                                    <input asp-for="SystemSettingCopyright" class="form-control" required />
+                                    <span asp-validation-for="SystemSettingCopyright" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row mb-3">
+                                <label asp-for="File" class="col-sm-4 col-form-label"></label>
+                                <div class="col-sm-8">
+                                    <input asp-for="File" class="form-control" />
+                                    <span asp-validation-for="File" class="text-danger"></span>
+                                    <input asp-for="SystemSettingLogoImageUrl" class="form-control" hidden />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row mb-3">
+                                <label asp-for="File2" class="col-sm-4 col-form-label"></label>
+                                <div class="col-sm-8">
+                                    <input asp-for="File2" class="form-control" />
+                                    <span asp-validation-for="File2" class="text-danger"></span>
+                                    <input asp-for="SystemSettingLogoImageUrl2" class="form-control" hidden />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="row mb-3">
+                                <label asp-for="File3" class="col-sm-4 col-form-label"></label>
+                                <div class="col-sm-8">
+                                    <input asp-for="File3" class="form-control" />
+                                    <span asp-validation-for="File3" class="text-danger"></span>
+                                    <input asp-for="SystemSettingWelcomeNoteImageUrl" class="form-control" hidden />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group text-end">
+                        <input type="submit" value="Save Changes" class="btn btn-primary" />
+                        <a asp-action="SystemSettingIndex" class="btn btn-secondary">Back to List</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+

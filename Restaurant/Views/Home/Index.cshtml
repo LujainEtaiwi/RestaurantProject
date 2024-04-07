@@ -1,0 +1,191 @@
+﻿
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@{
+    Layout = "_UserLayout";
+}
+
+<div class="slider-area">
+    <div class="slider-active owl-dot-style owl-carousel">
+        @foreach (var item in Model.ListMasterSlider)
+        {
+            <div class="single-slider bg-img height-100vh d-flex align-items-center justify-content-center" style="background-image:url(/images/@item.MasterSliderUrl);">
+                <div class="slider-content pt-100">
+                    <div class="slider-content-wrap slider-animated-1">
+                        @Html.Raw(item.MasterSliderTitle)
+                        @Html.Raw(item.MasterSliderBreef)
+                        <p>@item.MasterSliderDesc</p>
+                        <div class="slider-btn mt-20">
+                            <a class="animated" asp-action="ProductDetails1">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<div class="about-area ptb-95">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-6">
+                <div class="about-content pr-30">
+                    <h2>@Model.SystemSetting.SystemSettingWelcomeNoteTitle</h2>
+                    <h3>@Model.SystemSetting.SystemSettingWelcomeNoteBreef</h3>
+                    <div class="about-peragraph">
+                        <p>@Model.SystemSetting.SystemSettingWelcomeNoteDesc</p>
+                        <div class="default-btn-style mt-35">
+                            <a href="#">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img alt="" src="~/images/@Model.SystemSetting.SystemSettingWelcomeNoteImageUrl">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popular-product gray-bg pt-100 pb-100">
+    <div class="container">
+        <div class="section-title text-center mb-50">
+            <h2>Our Popular Dishes</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
+        </div>
+        <div class="product-slider-active owl-carousel">
+            @foreach (var item in Model.ListMasterItemMenu.OrderByDescending(x=>x.MasterCategoryMenuId).Take(5))
+            {
+                <div class="product-style-wrap">
+                    <img alt="" src="~/images/@item.MasterItemMenuImageUrl">
+                    <div class="product-content text-center">
+                        <h4>
+                            @item.MasterItemMenuTitle
+                        </h4>
+                        <p>@item.MasterItemMenuBreef</p>
+                        <span>$@item.MasterItemMenuPrice</span>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="popular-bg-img">
+        <img alt="" src="~/images/popular.png">
+    </div>
+</div>
+
+
+<div class="book-table ptb-100 bg-img" id="book" style="background-image:url(/assets/img/banner/book-a-table.jpg);">
+    <div class="container">
+        <div class="section-title text-center mb-50">
+            <h2>book a table</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="reserve-form">
+                    <h3 class="reserv-title">Reservation Form</h3>
+                    <form asp-action="BookTable">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input asp-for="TransactionBookTable.TransactionBookTableId" value="0" hidden>
+                        <div class="reserve-form-top">
+
+                            <input asp-for="TransactionBookTable.TransactionBookTableFullName" placeholder="Full name">
+                            <span asp-validation-for="TransactionBookTable.TransactionBookTableFullName" class="text-danger"></span>
+
+                            <input asp-for="TransactionBookTable.TransactionBookTableEmail" placeholder="Email address">
+                            <span asp-validation-for="TransactionBookTable.TransactionBookTableEmail" class="text-danger"></span>
+
+                            <input asp-for="TransactionBookTable.TransactionBookTableMobileNumber" placeholder="Mobile number">
+                            <span asp-validation-for="TransactionBookTable.TransactionBookTableMobileNumber" class="text-danger"></span>
+
+                            <div class="date-time">
+                                <select asp-for="TransactionBookTable.TransactionBookTableDate">
+                                    <option value="" disabled selected>Select Date And Time</option>
+                                    <option value="2022-12-26T22:00:00.0000000">26 Dec - 10.00pm</option>
+                                    <option value="2023-01-02T22:00:00.0000000">2 Jan - 10.00pm</option>
+                                    <option value="2022-12-17T22:00:00.0000000">17 Dec - 10.00pm</option>
+                                </select>
+                                <span asp-validation-for="TransactionBookTable.TransactionBookTableDate" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="reserve-submit mt-40">
+                            <button type="submit"> submit </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="book-img">
+                    <img src="~/assets/img/banner/table.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="testimonial-area ptb-100 gray-bg">
+    <div class="container">
+        <div class="section-title text-center mb-50">
+            <h2>what people say</h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="testimonial-image-slider text-center">
+                    @foreach (var item in Model.ListReview)
+                    {
+                        <div class="single-testi-text">
+                            @Html.Raw(item.ReviewDesc)
+                        </div>
+                    }
+
+                </div>
+                <div class="testimonial-text-slider text-center">
+                    @foreach (var item in Model.ListReview)
+                    {
+                        <div class="single-testi-img">
+                            <img src="~/images/@item.ReviewImage" alt="testi 1" />
+                            <h3>@item.ReviewTitle</h3>
+                            <h5>customer</h5>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="offer-area gray-bg ptb-100 bg-img" style="background-image:url(/images/@Model.MasterOffer.MasterOfferImageUrl);">
+    <div class="container">
+        <div class="row">
+            <div class="xl-auto col-xl-5 ms-auto col-lg-6 col-md-12">
+                <div class="offer-content">
+                    <h5>@Model.MasterOffer.MasterOfferTitle</h5>
+                    <h2>@Model.MasterOffer.MasterOfferBreef</h2>
+                    <p>@Model.MasterOffer.MasterOfferDesc</p>
+                    <div class="default-btn-style book-btn mt-35">
+                        <a class="scroll-up" href="#book">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="brand-logo-area ptb-100">
+    <div class="container">
+        <div class="brand-logo-active owl-carousel">
+
+            @foreach (var item in Model.ListMasterPartner)
+            {
+                <div class="single-brand-logo">
+                    <img alt="" src="~/images/@item.MasterPartnerLogoImageUrl">
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!-- Favicons -->
+    <link href="~/Admin/assets/img/favicon.png" rel="icon">
+    <link href="~/Admin/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    
+
+    <!-- Vendor CSS Files -->
+    <link href="~/Admin/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Admin/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/Admin/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/Admin/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="~/Admin/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="~/Admin/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/Admin/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="~/Admin/assets/css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a asp-action="Index" asp-controller="Home" class="logo d-flex align-items-center">
+                <img src="~/Admin/assets/img/logo.png" alt="">
+                <span class="d-none d-lg-block">Admin</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="search-bar">
+            <form class="search-form d-flex align-items-center" method="POST" action="#">
+                <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+            </form>
+        </div><!-- End Search Bar -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+                <li class="nav-item dropdown pe-3">
+
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="~/Admin/assets/img/messages-1.jpg" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">@User.Identity.Name</span>
+                    </a><!-- End Profile Iamge Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>@User.Identity.Name</h6>
+                            <span>Web Designer</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="bi bi-person"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="bi bi-gear"></i>
+                                <span>Account Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Need Help?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" asp-action="Logout" asp-controller="Account">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Sign Out</span>
+                            </a>
+                        </li>
+
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header>
+
+
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link " asp-action="Index" asp-controller="Home">
+                    <i class="bi bi-grid"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-journal-text"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a asp-action="MasterCategoryMenuIndex" asp-controller="MasterCategoryMenu">
+                            <i class="bi bi-circle"></i><span>Master Category Menu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="MasterContactUsInformationIndex" asp-controller="MasterContactUsInformation">
+                            <i class="bi bi-circle"></i><span>Master ContactUs Information</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="MasterItemMenuIndex" asp-controller="MasterItemMenu">
+                            <i class="bi bi-circle"></i><span>Master Item Menu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="MasterMenuIndex" asp-controller="MasterMenu">
+                            <i class="bi bi-circle"></i><span>Master Menu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="MasterOfferIndex" asp-controller="MasterOffer">
+                            <i class="bi bi-circle"></i><span>Master Offer</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="MasterPartnerIndex" asp-controller="MasterPartner">
+                            <i class="bi bi-circle"></i><span>Master Partner</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="MasterServicesIndex" asp-controller="MasterServices">
+                            <i class="bi bi-circle"></i><span>Master Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="MasterSliderIndex" asp-controller="MasterSlider">
+                            <i class="bi bi-circle"></i><span>Master Slider</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="MasterSocialMediumIndex" asp-controller="MasterSocialMedium">
+                            <i class="bi bi-circle"></i><span>Master Social Media</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="MasterWorkingHoursIndex" asp-controller="MasterWorkingHours">
+                            <i class="bi bi-circle"></i><span>Master Working Hours</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="Index" asp-controller="Review">
+                            <i class="bi bi-circle"></i><span>Review</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="SystemSettingIndex" asp-controller="SystemSetting">
+                            <i class="bi bi-circle"></i><span>System Setting</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="Index" asp-controller="User">
+                            <i class="bi bi-circle"></i><span>User</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Forms Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-layout-text-window-reverse"></i><span>Transactions</span><i class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a asp-action="TransactionBookTableIndex" asp-controller="TransactionBookTable">
+                            <i class="bi bi-circle"></i><span>Book Table</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="TransactionContactUsIndex" asp-controller="TransactionContactUs">
+                            <i class="bi bi-circle"></i><span>Contact Us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="TransactionNewsletterIndex" asp-controller="TransactionNewsletter">
+                            <i class="bi bi-circle"></i><span>News Letter</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Tables Nav -->
+
+
+        </ul>
+
+    </aside>
+
+
+
+    <main id="main" class="main">
+        @RenderBody()
+    </main>
+
+
+
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>ShmxAdmin</span></strong>. All Rights Reserved
+        </div>
+    </footer>
+
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+     <!-- Vendor JS Files -->
+    <script src="~/Admin/assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="~/Admin/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Admin/assets/vendor/chart.js/chart.min.js"></script>
+    <script src="~/Admin/assets/vendor/echarts/echarts.min.js"></script>
+    <script src="~/Admin/assets/vendor/quill/quill.min.js"></script>
+    <script src="~/Admin/assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="~/Admin/assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="~/Admin/assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://kit.fontawesome.com/e3193a3a5c.js" crossorigin="anonymous"></script>
+    <script src="~/jquery/jquery.js"></script>
+    <script src="~/jquery-validate/jquery.validate.js"></script>
+    <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <!-- Template Main JS File -->
+    <script src="~/Admin/assets/js/main.js"></script>
+</body>
+</html>

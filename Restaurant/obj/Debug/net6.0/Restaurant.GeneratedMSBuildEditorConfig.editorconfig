@@ -1,0 +1,249 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Restaurant
+build_property.RootNamespace = Restaurant
+build_property.ProjectDir = C:\Users\NTC\Desktop\Restaurantggg\Restaurant\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\NTC\Desktop\Restaurantggg\Restaurant
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterCategoryMenu/MasterCategoryMenuCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyQ2F0ZWdvcnlNZW51XE1hc3RlckNhdGVnb3J5TWVudUNyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterCategoryMenu/MasterCategoryMenuEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyQ2F0ZWdvcnlNZW51XE1hc3RlckNhdGVnb3J5TWVudUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterCategoryMenu/MasterCategoryMenuIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyQ2F0ZWdvcnlNZW51XE1hc3RlckNhdGVnb3J5TWVudUluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterContactUsInformation/MasterContactUsInformationCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyQ29udGFjdFVzSW5mb3JtYXRpb25cTWFzdGVyQ29udGFjdFVzSW5mb3JtYXRpb25DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterContactUsInformation/MasterContactUsInformationEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyQ29udGFjdFVzSW5mb3JtYXRpb25cTWFzdGVyQ29udGFjdFVzSW5mb3JtYXRpb25FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterContactUsInformation/MasterContactUsInformationIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyQ29udGFjdFVzSW5mb3JtYXRpb25cTWFzdGVyQ29udGFjdFVzSW5mb3JtYXRpb25JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterItemMenu/MasterItemMenuCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVySXRlbU1lbnVcTWFzdGVySXRlbU1lbnVDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterItemMenu/MasterItemMenuEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVySXRlbU1lbnVcTWFzdGVySXRlbU1lbnVFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterItemMenu/MasterItemMenuIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVySXRlbU1lbnVcTWFzdGVySXRlbU1lbnVJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterMenu/MasterMenuCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyTWVudVxNYXN0ZXJNZW51Q3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterMenu/MasterMenuEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyTWVudVxNYXN0ZXJNZW51RWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterMenu/MasterMenuIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyTWVudVxNYXN0ZXJNZW51SW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterOffer/MasterOfferCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyT2ZmZXJcTWFzdGVyT2ZmZXJDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterOffer/MasterOfferEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyT2ZmZXJcTWFzdGVyT2ZmZXJFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterOffer/MasterOfferIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyT2ZmZXJcTWFzdGVyT2ZmZXJJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterPartner/MasterPartnerCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyUGFydG5lclxNYXN0ZXJQYXJ0bmVyQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterPartner/MasterPartnerEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyUGFydG5lclxNYXN0ZXJQYXJ0bmVyRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterPartner/MasterPartnerIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyUGFydG5lclxNYXN0ZXJQYXJ0bmVySW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterServices/MasterServicesCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyU2VydmljZXNcTWFzdGVyU2VydmljZXNDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterServices/MasterServicesEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyU2VydmljZXNcTWFzdGVyU2VydmljZXNFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterServices/MasterServicesIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyU2VydmljZXNcTWFzdGVyU2VydmljZXNJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterSlider/MasterSliderCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyU2xpZGVyXE1hc3RlclNsaWRlckNyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterSlider/MasterSliderEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyU2xpZGVyXE1hc3RlclNsaWRlckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterSlider/MasterSliderIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyU2xpZGVyXE1hc3RlclNsaWRlckluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterSocialMedium/MasterSocialMediumCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyU29jaWFsTWVkaXVtXE1hc3RlclNvY2lhbE1lZGl1bUNyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterSocialMedium/MasterSocialMediumEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyU29jaWFsTWVkaXVtXE1hc3RlclNvY2lhbE1lZGl1bUVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterSocialMedium/MasterSocialMediumIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyU29jaWFsTWVkaXVtXE1hc3RlclNvY2lhbE1lZGl1bUluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterWorkingHours/MasterWorkingHoursCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyV29ya2luZ0hvdXJzXE1hc3RlcldvcmtpbmdIb3Vyc0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterWorkingHours/MasterWorkingHoursEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyV29ya2luZ0hvdXJzXE1hc3RlcldvcmtpbmdIb3Vyc0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/MasterWorkingHours/MasterWorkingHoursIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyV29ya2luZ0hvdXJzXE1hc3RlcldvcmtpbmdIb3Vyc0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/Review/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/Review/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/Review/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmV2aWV3XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/Shared/_RegistrationLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9SZWdpc3RyYXRpb25MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/SystemSetting/SystemSettingCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3lzdGVtU2V0dGluZ1xTeXN0ZW1TZXR0aW5nQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/SystemSetting/SystemSettingEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3lzdGVtU2V0dGluZ1xTeXN0ZW1TZXR0aW5nRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/SystemSetting/SystemSettingIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU3lzdGVtU2V0dGluZ1xTeXN0ZW1TZXR0aW5nSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/TransactionBookTable/TransactionBookTableIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVHJhbnNhY3Rpb25Cb29rVGFibGVcVHJhbnNhY3Rpb25Cb29rVGFibGVJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/TransactionContactUs/TransactionContactUsIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVHJhbnNhY3Rpb25Db250YWN0VXNcVHJhbnNhY3Rpb25Db250YWN0VXNJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/TransactionNewsletter/TransactionNewsletterIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVHJhbnNhY3Rpb25OZXdzbGV0dGVyXFRyYW5zYWN0aW9uTmV3c2xldHRlckluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Views/Home/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Views/Home/Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Views/Home/ProductDetails1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0RGV0YWlsczEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Views/Shared/_OthersLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9PdGhlcnNMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Views/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/NTC/Desktop/Restaurantggg/Restaurant/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

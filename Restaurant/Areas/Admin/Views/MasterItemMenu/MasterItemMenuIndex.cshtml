@@ -1,0 +1,155 @@
+﻿@model IEnumerable<Restaurant.Models.MasterItemMenu>
+
+@{
+    ViewData["Title"] = "MasterItemMenuIndex";
+}
+
+<div class="pagetitle">
+    <h1>Item Menu Table</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Home</a></li>
+            <li class="breadcrumb-item active">Item Menu</li>
+        </ol>
+    </nav>
+</div>
+
+<hr />
+
+
+<div class="text-end">
+    <p>
+        <a asp-action="MasterItemMenuCreate" class="btn btn-outline-success"><span>+</span> Create Item</a>
+    </p>
+</div>
+
+
+<section class="section">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <table class="table datatable index-table text-break">
+                        <thead>
+                            <tr >
+                                <th>
+                                    @Html.DisplayNameFor(model => model.MasterItemMenuTitle)
+                                </th>
+                                <th class="text-center">
+                                    @Html.DisplayNameFor(model => model.MasterItemMenuBreef)
+                                </th>
+                                <th class="text-center">
+                                    @Html.DisplayNameFor(model => model.MasterItemMenuDesc)
+                                </th>
+                                <th class="text-center">
+                                    @Html.DisplayNameFor(model => model.MasterItemMenuPrice)
+                                </th>
+                                <th class="text-center">
+                                    @Html.DisplayNameFor(model => model.MasterItemMenuDate)
+                                </th>
+                                <th class="text-center">
+                                    @Html.DisplayNameFor(model => model.MasterCategoryMenu.MasterCategoryMenuName)
+                                </th>
+                                <th class="text-center">
+                                    @Html.DisplayNameFor(model => model.MasterItemMenuImageUrl)
+                                </th>
+                                <th class="text-center">
+                                    Actions
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td class="align-middle">
+                                        @Html.DisplayFor(modelItem => item.MasterItemMenuTitle)
+                                    </td>
+                                    <td class="align-middle">
+                                        @Html.DisplayFor(modelItem => item.MasterItemMenuBreef)
+                                    </td>
+                                    <td class="align-middle">
+                                        @Html.DisplayFor(modelItem => item.MasterItemMenuDesc)
+                                    </td>
+                                    <td class="align-middle">
+                                        @Html.DisplayFor(modelItem => item.MasterItemMenuPrice)
+                                    </td>
+                                    <td class="align-middle">
+                                        @Html.DisplayFor(modelItem => item.MasterItemMenuDate)
+                                    </td>
+                                    <td class="align-middle">
+                                        @Html.DisplayFor(modelItem => item.MasterCategoryMenu.MasterCategoryMenuName)
+                                    </td>
+                                    <td class="align-middle">
+                                        <img src="~/Images/@item.MasterItemMenuImageUrl" style="max-width:50px" alt="" />
+                                    </td>
+                                    <td class="align-middle text-center">
+                                        <a asp-action="MasterItemMenuEdit" asp-route-id="@item.MasterItemMenuId">
+                                            <i class="bx bxs-edit text-secondary h5"></i>
+                                        </a>|
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#deleteModal" class="csBtnDelete"
+                                           data-path="@Url.ActionLink("MasterItemMenuIndex", "MasterItemMenu", new { idDelete = item.MasterItemMenuId })">
+                                            <i class="bx bxs-trash text-danger h5"></i>
+                                        </a>|
+                                        @if (item.IsActive)
+                                        {
+                                            <a asp-action="Active" asp-route-id="@item.MasterItemMenuId">
+                                                <i class="ri-eye-fill text-success h5"></i>
+                                            </a>
+                                        }
+                                        else
+                                        {
+                                            <a asp-action="Active" asp-route-id="@item.MasterItemMenuId">
+                                                <i class="ri-eye-close-fill text-danger h5"></i>
+                                            </a>
+                                        }
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="modal fade" id="deleteModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirm Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure for delete this item ?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="btnCansel" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" id="btnConfirmDelete">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+
+        var dataPath = "";
+        $(".csBtnDelete").click(function () {
+            dataPath = $(this).data("path");
+
+        });
+        $("#btnConfirmDelete").click(function () {
+            window.location = dataPath;
+            dataPath = "";
+
+        });
+
+        $("#btnCansel").click(function () {
+            dataPath = "";
+        });
+
+    })
+</script>
